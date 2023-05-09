@@ -14,4 +14,10 @@ listadoEstudiantes:any[]=[
   {nombre: "Ignacio Karlen", estado:"Recursante"},
 ]
 
+mostrar=true
+
+mostrarNoMostrar() {
+  this.mostrar=!this.mostrar
+}
+
 }

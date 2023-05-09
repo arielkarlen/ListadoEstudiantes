@@ -1,22 +1,25 @@
 <div class="container mt-4">
   <div class="row">
     <h1>Listado de estudiantes</h1>
+    <button class="btn btn-primary col-2" (click)="mostrarNoMostrar()">Mostrar/Ocultar</button>
   </div>
   <div class="row mt-4">
-    <table class="table">
+    <table class="table" *ngIf="mostrar==true">
       <thead>
         <th>#</th>
         <th>Nombre</th>
         <th>Estado</th>
       </thead>
-      <tbody>
+      <tbody *ngIf="listadoEstudiantes.length>0">
         <tr *ngFor="let estudiante of listadoEstudiantes; let i = index">
           <td>{{i+1}}</td>
           <td>{{estudiante.nombre}}</td>
           <td>{{estudiante.estado}}</td>
         </tr>
       </tbody>
+
     </table>
+    <h3 *ngIf="listadoEstudiantes.length==0">No hay registros para mostrar</h3>
   </div>
 
 </div>
