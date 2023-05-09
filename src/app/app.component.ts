@@ -10,7 +10,7 @@ export class AppComponent {
 listadoEstudiantes:any[]=[
   {nombre: "Ariel Karlen", estado:"Regular"},
   {nombre: "Joaquin Karlen", estado:"Promocionado"},
-  {nombre: "Agustin Karlen", estado:"Libre"},
+  {nombre: "Agustin Karlen", estado:"Regular"},
   {nombre: "Ignacio Karlen", estado:"Recursante"},
 ]
 
